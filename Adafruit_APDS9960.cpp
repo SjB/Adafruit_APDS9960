@@ -83,7 +83,7 @@ void Adafruit_APDS9960::enable(boolean en) {
  *  @return True if initialization was successful, otherwise false.
  */
 boolean Adafruit_APDS9960::begin(uint16_t iTimeMS, apds9960AGain_t aGain,
-                                 uint8_t addr, TwoWire *theWire) {
+                                 uint8_t addr, USI_TWI *theWire) {
   _wire = theWire;
   _i2c_init();
   _i2caddr = addr;
